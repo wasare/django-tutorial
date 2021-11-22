@@ -1,0 +1,6 @@
+<h4>Criar Categoria</h4>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Salvar</button>
+</form>
