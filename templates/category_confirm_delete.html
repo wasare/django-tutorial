@@ -1,0 +1,10 @@
+{% extends '_base.html' %}
+
+{% block content %}
+<h4>Excluir Categoria: {{ object.name }}?</h4>
+<form method="post">
+    {% csrf_token %}
+    Tem certeza que deseja excluir este categoria?
+    <input type="submit" value="Sim, excluir!" />
+</form>
+{% endblock content %}
